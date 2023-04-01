@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>
+Multliplication Table</title>
+<script>
+function printTable() {
+var tabNum = parseInt(document.getElementById("number").value);
+var values = ""
+for (i = 1; i < 11; i++) {
+values+= "<tr><td>" + tabNum + "</td><td> X </td><td>" + i + "</td><td> =</td><td>" + (tabNum * i) + "</td></tr>"
+}
+document.getElementById("multab").innerHTML = values;
+}
+</script>
+<style>
+tr,td {
+text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>
+Multliplication Table
+</h1>
+<form action="">
+<label for="num">Enter a Number : </label>
+<input type="text" name="num" id="number">
+<br>
+<br>
+<input type="button" onclick="printTable()" value="Print Table">
+</form>
+<table id="multab" border="1px solid black" style="border-collapse: collapse; width: 140px;">
+</table>
+</body>
+</html>
