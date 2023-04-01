@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Form Example</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<link rel="stylesheet" href="style4.css">
+<script>
+function display() {
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+  message = "<ul><li><b>NAME: </b>"+ document.form1.yourname.value;
+  message += "<li><b>ADDRESS: </b>" + document.form1.address.value;
+  message += "<li><b>BRAND: </b>" + document.form1.brand.value;
+  message += "<li><b>TYPE OF CAR: </b>" + document.form1.car_type.value;
+  message += "<li><b>SELECT YOUR PRICE: </b>" + document.form1.SYP.value;
+  message += "<li><b>PHONE: </b>" + document.form1.phone.value + "</ul>";
+  DispWin.document.write(message);
+}
+</script>
+</head>
+<body>
+<h1 class="p1">Car Rental Form</h1>
+<div class="form-box">
+<h3 class="p1">Find The Right Car Now</h3>
+<form id="register"  name="form1">
+<input TYPE="TEXT" NAME="yourname"  class="input-field" placeholder="Your Name">
+<input TYPE="TEXT" NAME="address" class="input-field" placeholder="Enter your Email...">
+<input TYPE="TEXT" NAME="phone" class="input-field" placeholder="Phone Number">
+<select id="cars"  NAME="brand" class="input-field1" name="cars">
+    <option value="">Select Brand</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option></select>
+<select id="cars" NAME="car_type" class="input-field1" name="cars">
+    <option value="">Type of Car</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+     </select>
+<h3 class="p1">Select your price</h3>
+<table>
+<tr><td><input type="radio" id="CARS" name="SYP" value="BELOW $40,000">
+<label for="COST">BELOW $40,000</label></td>
+<td><input type="radio" id="CARS" name="SYP" value="$45,000">
+<label for="COST">$45,000</label><br></td></tr>
+<tr><td><input type="radio" id="CARS" name="SYP" value="$50,000">
+<label for="COST">$50,000</label></td>
+<td><input type="radio" id="CARS" name="SYP" value="$55,000">
+<label for="COST">$55,000</label></td></tr></table><br>
+<br>
+<input TYPE="BUTTON" VALUE="SEND" class="submit-btn" onClick="display();">
+</form>
+</div>
+</body>
+</html>

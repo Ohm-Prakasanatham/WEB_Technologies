@@ -1,0 +1,56 @@
+body{
+background-image: url(car.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+color:#fff;
+}
+.form-box{
+width:380px;
+height:480px;
+position:relative;
+margin:6% auto;
+background:#000000;
+opacity: .5;
+padding:5px;
+overflow:hidden;
+}
+.p1{
+font-family:"arial";
+color:#fff;
+text-align:center;
+}
+.input-field{
+width:90%;
+padding:10px ;
+margin: 5px 15px;
+border:1px solid #FFF;
+outline:none;
+background:transparent;
+caret-color: red;
+color:#fff;
+font-weight: bold;
+}
+.input-field1{
+width:40%;
+padding:10px ;
+margin: 5px 15px;
+border:1px solid #FFF;
+outline:none;
+color=#fff;
+}
+.submit-btn{
+width:30%;
+padding:10px 30px;
+cursor:pointer;
+display:block;
+margin: auto;
+background:#77ba22;
+border:0;
+outline:none;
+font-weight: bolder;
+text-align:center;
+}
+::placeholder {
+  color: #fff;
+  opacity: 1; 
+}
