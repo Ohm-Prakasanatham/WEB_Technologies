@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>
+Quadratic equation
+</title>
+<script>
+var root1, root2;
+var a,b,c;
+function calRoot(){
+a=parseInt(document.getElementById("one").value);
+b=parseInt(document.getElementById("two").value);
+c=parseInt(document.getElementById("three").value);
+let discriminant = b * b - 4 * a * c;
+if (discriminant > 0) {
+root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+document.getElementById("root1").value=root1;
+document.getElementById("root2").value=root2;
+}
+else if (discriminant == 0) {
+root1 = root2 = -b / (2 * a);
+document.getElementById("root1").value=root1;
+document.getElementById("root2").value=root2;
+}
+// if non real roots
+else {
+let realPart = (-b / (2 * a)).toFixed(2);
+let imagPart = (Math.sqrt(-discriminant) / (2 * a)).toFixed(2);
+document.getElementById("root1").value=root1;
+document.getElementById("root2").value=root2;
+}
+}
+</script>
+</head>
+<body>
+<h1>ROOTS OF QUADRATIC EQUATION</h1>
+<p>Enter the First Number: <input id="one"></p>
+<p>Enter the Second Number: <input id="two"></p>
+<p>Enter the Third Number: <input id="three"></p>
+<p><button onclick="calRoot()">Calculate</button></p>
+<p>The 1st Root is: <input id="root1"></p>
+<p>The 2nd Root is: <input id="root2"></p>
+</body>
+</html>
