@@ -1,0 +1,63 @@
+<html>
+<head>
+<link rel="stylesheet" href="style5.css">
+<script>
+            function GEEKFORGEEKS() {
+                var name = 
+                    document.forms["RegForm"]["First_Name"];
+                var name = 
+                    document.forms["RegForm"]["Last_Name"];
+                var email = 
+                    document.forms["RegForm"]["EMail"];
+  
+                if (First_name.value == "") {
+                    window.alert("Please enter your First name.");
+                    name.focus();
+                    return false;
+                }
+                if (Last_name.value == "") {
+                    window.alert("Please enter your Last name.");
+                    name.focus();
+                    return false;
+                }
+  
+                if (email.value == "") {
+                    window.alert(
+                      "Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                }
+  </script>
+</head>
+<body>
+<div class="box1">
+<br><br>
+<h2 class="p1">Analytics 101</h2>
+<p class="p1">This free workshop shows you how to track<br>important metrics in your business</p>
+<h4 class="p1">Your host</h4>
+<img src="Ohm.jpg" height="90px" width="90px" class="center">
+<p class="p1">CEO,Company</p>
+<p class="p1">Naruto</p>
+</div>
+<div class="box2">
+<br><br>
+<h2 class="p1">Register now</h2>
+<p class="p1">Enter your information to register for the workshop.</p>
+<form name="RegForm" onsubmit="return GEEKFORGEEKS()" method="post">
+     <input type="text" class="input-field" placeholder="First Name" NAME="First_Name" required >
+     <input type="text" class="input-field" placeholder="Lost Name" NAME="Last_Name" required>
+     <input type="email" class="input-field1" placeholder="Your email" NAME="EMail" required>
+<p>&nbsp &nbsp Select Day:</p>
+<select class="input-field2" name="day" id="day">
+<option value="">Choose a day</option>
+<option value="Monday">Monday</option>
+<option value="Tuesday">Tuesday</option>
+<option value="wednesday">wednesday</option>
+<option value="Thrusday">Thrusday</option>
+<option value="Friday">Friday</option>
+<option value="Saturday">Saturday</option>
+</select>
+<button type="submit" class="submit-btn">Register</button></form>
+</div>
+</body>
+</html>

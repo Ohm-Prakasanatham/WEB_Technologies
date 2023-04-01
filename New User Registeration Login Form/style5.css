@@ -1,0 +1,68 @@
+body{
+background:#667588;
+font-family:"arial";
+}
+.box1 {
+position: fixed;
+margin:2% 40px;
+width: 400px;
+height:420px;
+background-color:#28314f;
+color:#fff;
+}
+.box2 {
+position: fixed;
+margin:2% 440px;
+width: 400px;
+height: 420px;
+background-color:white;
+}
+.p1{
+font-family:"arial";
+text-align:center;
+}
+img{
+border-radius: 50%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.input-field{
+width:40%;
+padding:10px ;
+margin: 5px 15px;
+border:1px solid #000;
+outline:none;
+caret-color: red;
+}
+.input-field1{
+width:90%;
+padding:10px ;
+margin: 5px 15px;
+border:1px solid #000;
+outline:none;
+caret-color: red;
+color:#000;
+}
+.input-field2{
+width:90%;
+padding:10px ;
+margin: 5px 15px;
+border:1px solid #000;
+outline:none;
+}
+.submit-btn{
+width:92%;
+padding:10px 30px;
+cursor:pointer;
+display:block;
+margin: auto;
+background:#006cfd;
+border:0;
+outline:none;
+font-weight: bolder;
+text-align:center;
+color:#fff;
+}
