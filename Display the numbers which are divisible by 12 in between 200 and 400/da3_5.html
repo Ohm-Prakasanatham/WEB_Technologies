@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Qn 5</title>
+<script>
+var a, b;
+var text="";
+function numsDisplay() {
+a = 200;
+b = 400;
+for (let i = a; i < b; i++) {
+if (i % 12 == 0) {
+text += i + ", "
+}
+}
+document.getElementById("res").innerHTML = text;
+}
+</script>
+</head>
+<body>
+<h1>The Numbers divisible by 12 in between 200 & 400 are</h1>
+<p><button onclick="numsDisplay()">Display</button></p>
+<p id="res"></p>
+</body>
+</html>
